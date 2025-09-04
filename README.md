@@ -1,6 +1,7 @@
 # O. Henry Short Stories Analysis
 
 [Research Question and Background]
+
 “Do O. Henry’s characters reflect stereotypes of early 20th-century America?” This
 question is very important because it helps us understand how literary works reflect and
 shape social perceptions. The early 20th century was a significant period of social change
@@ -12,10 +13,12 @@ literature, influencing people’s views on identity and social class. This has 
 implications for literary studies, social history, and cultural research.
 
 [Data Source]
+
 I selected 25 of O. Henry’s more well-known short stories and converted them into txt
 files, which I stored in a corpus for analysis.
 
 [Method 1 - Named Entity Recognition]
+
 In this method, I used SpaCy’s named entity recognition to find all characters in the O.
 Henry stories. Then I collected adjectives that appear in the same sentence as each
 character. I focused on a list of adjectives that are related to social stereotypes common in
@@ -30,6 +33,7 @@ language used in the stories with the social ideas about people in early 20th-ce
 America, helping us understand how literature can reflect cultural views.
 
 [Method 2 - Word2Vec]
+
 In this method, I used the Word2Vec model to train on the complete texts of O. Henry,
 aiming to find words that were semantically closest to preset stereotype keywords. First,
 SpaCy was used to split the texts into sentences and tokens, and then these data were
@@ -45,6 +49,7 @@ by simply clustering certain words, but were implicitly conveyed through diverse
 contexts.
 
 [Method 3 - LDA Topic Modeling]
+
 In the third method, I used the topic model to analyze the themes in the complete works
 of O. Henry. First, SpaCy was applied to preprocess the text by splitting it into sentences,
 performing lemmatization, and removing stop words, which produced a dictionary and
